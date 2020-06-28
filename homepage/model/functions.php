@@ -7,7 +7,7 @@ require_once("../model/class_travler.php");
 $connection = null;
 function open_connetion(){
     global $connection;
-    $connection = mysqli_connect("localhost", "root", "", "flightManagmentP2", "3306");
+    $connection = mysqli_connect("localhost", "root", "", "flx", "3306");
     if(mysqli_connect_errno()){
         die("Database connection error: ".mysqli_connect_error() ." (".mysqli_connect_errno().")");
     }

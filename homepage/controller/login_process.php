@@ -16,7 +16,7 @@ if (isset($_POST["singin"])){
       $_SESSION['passport'] = $user->get_data()["passport"];
       $_SESSION['role'] = $user->get_data()["role"];
       if(isset($_GET['id'])){
-      header("Location: ../views/reserve.php?id={$_GET['id']}");
+      header("Location: ../views/confirmation.php?id={$_GET['id']}");
       exit;
     }else{
         $_SESSION['state'] = "success";
@@ -42,7 +42,7 @@ if (isset($_POST["singin"])){
     $_SESSION['role'] = $user->get_data()["role"];
 
     if(isset($_GET['id'])){
-      header("Location: ../views/reserve.php?id={$_GET['id']}");
+      header("Location: ../views/confirmation.php?id={$_GET['id']}");
       exit;
     }else{
       $_SESSION['state'] = "success";

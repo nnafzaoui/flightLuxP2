@@ -133,7 +133,7 @@ include("../layout/header.php");
 				</thead>
 				<?php
             }
-                $page = isset($_SESSION['id']) ? "reserve.php" : "sing.php";
+                $page = isset($_SESSION['id']) ? "confirmation.php" : "login.php";
             ?>
 				<tbody>
 					<?php foreach($objects as $flight){ ?>
